@@ -1,0 +1,43 @@
+header{
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+    text-align: center;
+}
+footer{
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+    text-align: right;
+
+}
+.panel-flex{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60%;
+	width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+.rectangulo{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcionesVarias{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+}
+
+#color{
+    width: 100%;
+    height: 1.5rem;
+}
+
