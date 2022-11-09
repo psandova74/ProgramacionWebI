@@ -53,13 +53,7 @@ checkTipografia.addEventListener("change",()=>{
     tituloPelicula.classList.add(`${checkTipografia.value}`);
 })
 
-checkColorFondo.forEach(opcionFondo =>{
-    opcionFondo.addEventListener("click",()=>{
-        vistaPrevia.style.background=opcionFondo.value;
-    })
 
-})
-    
 
 // cambio de fondo de acuerdo a un radio button
 // Se deben crear las clases en css fondo1, fondo2, fondo3
