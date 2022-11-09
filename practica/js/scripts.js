@@ -3,6 +3,13 @@ let tituloPelicula=document.querySelector("#rectangulo");
 let vistaPrevia=document.querySelector("#vista-previa");
 
 
+//El input que ingresas por teclado
+const checkTexto=document.querySelector("#textoIngresado")
+checkTexto.addEventListener("keyup",()=>{
+   tituloPelicula.innerHTML = checkTexto.value
+})
+
+
 // radio button selecciona la serie
 const checkSerie=document.getElementsByName("serie");
 checkSerie.forEach(opcionSerie =>{
@@ -11,23 +18,8 @@ checkSerie.forEach(opcionSerie =>{
     })
 })
 
-//El input que ingresas por teclado
-const checkTexto=document.getElementsByName("textoIngresado")
-checkTexto.forEach( input =>{ 
-    input.addEventListener("keyup",()=>{
-        tituloPelicula.innerHTML = input.value
-    })
-} )
 
-// cambio de color del fondo.
-const checkColorFondo=document.getElementsByName("color-fondo");
-checkColorFondo.forEach(opcionFondo =>{
-    opcionFondo.addEventListener("click",()=>{
-        vistaPrevia.style.background=opcionFondo.value;
-    })
-})
-
-// cambio de color del texto.
+// radio button cambio de color del texto.
 const checkColorTexto=document.getElementsByName("color-texto");
 checkColorTexto.forEach(letraColor =>{
     letraColor.addEventListener("click",()=>{
@@ -45,18 +37,8 @@ checkAlineacionTexto.forEach(letraAlineacion =>{
     })
 })
 
-// Select que selecciona el tipo de tipografica
-const checkTipografia=document.querySelector("#tipografia");
-checkTipografia.addEventListener("change",()=>{
-    tituloPelicula.classList.remove("fuente-yanone");
-    tituloPelicula.classList.remove("fuente-roboto");
-    tituloPelicula.classList.add(`${checkTipografia.value}`);
-})
+// Radio button Se deben crear las clases en css fondo1, fondo2, fondo3
 
-
-
-// cambio de fondo de acuerdo a un radio button
-// Se deben crear las clases en css fondo1, fondo2, fondo3
 const checkFondoArchivo=document.getElementsByName("fondo");
 checkFondoArchivo.forEach(opcionArchivo=>{
     opcionArchivo.addEventListener("click",()=>{;
@@ -66,3 +48,21 @@ checkFondoArchivo.forEach(opcionArchivo=>{
         vistaPrevia.classList.add(`${opcionArchivo.value}`);
     });
 });
+
+// Select que selecciona el tipo de tipografica Se deben crear las clases en css fondo1, fondo2, fondo3
+const checkTipografia=document.querySelector("#tipografia");
+checkTipografia.addEventListener("change",()=>{
+    tituloPelicula.classList.remove("fuente-yanone");
+    tituloPelicula.classList.remove("fuente-roboto");
+    tituloPelicula.classList.add(`${checkTipografia.value}`);
+})
+
+// Select cambio de color del fondo.
+const checkColorFondo=document.querySelector("#color-fondo");
+checkColorFondo.addEventListener("change",()=>{
+    vistaPrevia.style.background=checkColorFondo.value;
+})
+
+
+
+
