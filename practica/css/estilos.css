@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yanone+Kaffeesatz&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header,footer{
+    border: #000 1px solid;
+    padding: 1em;
+}
+header{
+    text-align: center;
+}
+footer{
+    text-align: right;
+}
+.contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 1rem;
+    padding: 1em;
+    margin: 1em;
+}
+
+.vista-previa{
+
+    text-align: center;
+    border: #000 1px solid;
+    width: 20em;
+    height: 20em;
+}
+.opciones-a-seleccionar{
+  
+    border: #000 1px solid;
+    width: 20em;
+    height: 25em;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.rectangulo{
+    position: relative;
+    margin-top: 8em;
+}
+.opciones-a-seleccionar p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#color-fondo,#tipografia{
+        width: 100%;
+        height: 1.5rem;
+}
+
+h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.fuente-yanone{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.fuente-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fondo1{
+    background-image: url(../img/fondo01.png);
+}
+.fondo2{
+    background-image: url(../img/fondo02.png);
+}
+.fondo3{
+    background-image: url(../img/fondo03.png);
+}

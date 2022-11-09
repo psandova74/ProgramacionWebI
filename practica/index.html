@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>2do Parcial</title>
+</head>
+<body>
+    <header>
+        <h1>2do Parcial</h1>
+    </header>
+    <main>
+        <section class="contenedor-flex">
+            <article class="vista-previa" id="vista-previa">
+                <p class="rectangulo" id="rectangulo">Titulo de la Serie</p>
+            </article>
+            <article class="opciones-a-seleccionar">
+
+                <h4>Ingresa un texto:</h4> 
+                <input type="text" name="textoIngresado" id="textoIngresado">
+                <h4>Selecciona una serie:</h4>
+                <input type="radio" name="serie" value="Dr House">Dr House
+                <input type="radio" name="serie" value="Los 100">Los 100
+                <input type="radio" name="serie" value="Friends">Friends
+                <h4>Cambia el color del fondo:</h4>
+                <select name="color-fondo" id="color-fondo">
+                    <option value="" selected disabled hidden></option>
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+                <h4>Cambia el color del texto:</h4>
+                <input type="radio" name="color-texto" value="green">Verde
+                <input type="radio" name="color-texto" value="yellow">Amarillo
+                <input type="radio" name="color-texto" value="orange">Naranja
+
+                <h4>Cambia la alineacion del Texto:</h4> 
+                <input type="radio" name="alineacion"  value="center"><label>Centrado</label>
+                <input type="radio" name="alineacion"  value="left" ><label>Izquierda</label>
+                <input type="radio" name="alineacion"  value="right" ><label>Derecha</label>
+
+                <h4>Cambiá la tipografía</h4>
+                <select name="tipografia" id="tipografia">
+                    <option value="fuente-roboto">Roboto</option>
+                    <option value="fuente-yanone">Yanone Kaffeesatz</option>
+                </select>
+
+                <h4>Cambiá el fondo con archivo</h4>
+                <input type="radio" value="fondo1" name="fondo"> Fondo 1
+                <input type="radio" value="fondo2" name="fondo"> Fondo 2
+                <input type="radio" value="fondo3" name="fondo"> Fondo 3
+
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Sandoval, Patricia Lorena DNI 23.891.669</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

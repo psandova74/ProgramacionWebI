@@ -9,6 +9,7 @@ nombre.addEventListener("keyup",()=>{
 
 // Cambio de tipografia de acuerdo a un selector
 const tipo=document.querySelector("#tipografia");
+//const tipo=document.getElementsByName("tipografia");
 tipo.addEventListener("change",()=>{
     const valor=tipo.value;
     if(valor=="roboto"){
