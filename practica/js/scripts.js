@@ -38,7 +38,6 @@ checkAlineacionTexto.forEach(letraAlineacion =>{
 })
 
 // Radio button Se deben crear las clases en css fondo1, fondo2, fondo3
-
 const checkFondoArchivo=document.getElementsByName("fondo");
 checkFondoArchivo.forEach(opcionArchivo=>{
     opcionArchivo.addEventListener("click",()=>{;
