@@ -32,7 +32,6 @@ checkColorTexto.forEach(letraColor =>{
 const checkAlineacionTexto=document.getElementsByName("alineacion")
 checkAlineacionTexto.forEach(letraAlineacion =>{
     letraAlineacion.addEventListener("click",()=>{
-
         tituloPelicula.style.textAlign = letraAlineacion.value
     })
 })

@@ -3,21 +3,23 @@
     margin: 0;
     padding: 0;
 }
-header,footer{
-    border: #000 1px solid;
-    padding: 1em;
-}
+
 header{
     text-align: center;
 }
 footer{
+    border: 1px black solid;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: large;
+    text-align: center;
     text-align: right;
 }
 .contenedor-flex{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    gap: 1rem;
+    justify-content:center;
+    gap: 5rem;
     padding: 1em;
     margin: 1em;
 }
@@ -43,6 +45,7 @@ footer{
     position: relative;
     margin-top: 8em;
 }
+
 .opciones-a-seleccionar p{
     padding-top: 1em;
     padding-bottom: 1em;

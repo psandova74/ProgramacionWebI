@@ -1,0 +1,66 @@
+
+header{
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+    text-align: center;
+    color:#fff;
+    background-color: rgb(160, 135, 222);
+}
+footer{
+    border: 1px black solid;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: large;
+    text-align: right;
+    color:#fff;
+    background-color: rgb(215, 135, 222);
+
+}
+.panel-flex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+}
+.rectangulo{
+    border: 1px solid black;
+    padding-left: 20px;
+    width: 400px;
+    height: 200px;
+}
+.opcionesVarias{
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+
+
+
+.restablecer{
+    background-color: white;
+    color: black;
+}
+
+.coloryellow{
+    background-color: yellow;
+    color: white;
+}
+
+.colorgreen{
+    background-color: darkgreen;
+    color: white;
+}
+
+.colorblue{
+    background-color: midnightblue;
+    color: white;
+}
+.institucion{
+    margin-bottom: 20px;
+}
