@@ -2,20 +2,23 @@ const checkBottonBlue=document.querySelector("#blue")
 const checkBottonGreen=document.querySelector("#green")
 const checkBottonYellow=document.querySelector("#yellow")
 const checkBottonRestablecer=document.querySelector("#restablecer")
-const checkBotton=document.getElementsByClassName("boton")
 const checkInput=document.querySelector("#institucion")
 const cambiarInstitucion=document.querySelector("#institucion-ingresada")
 const modificarFondo=document.querySelector("#rectangulo")
 
 
+const colorAzul = document.getElementById("azul");
+const colorVerde = document.getElementById("verde");
+const colorAmarillo = document.getElementById("amarillo");
+const restablecerValores = document.getElementById("restablecer-colores");
+
+
 checkBottonBlue.addEventListener("click",()=>{
     modificarFondo.classList.remove("coloryellow")
-    modificarFondo.classList.remove("colorgreen")
-    modificarFondo.classList.remove("restablecer")
     modificarFondo.classList.remove("colorblue")
-    modificarFondo.classList.add(`${checkBottonBlue.value}`)
+    modificarFondo.classList.remove("restablecer")
+    modificarFondo.classList.add("colorblue")
 })
-
 
 checkBottonGreen.addEventListener("click",()=>{
     modificarFondo.classList.remove("coloryellow")

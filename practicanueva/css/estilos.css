@@ -1,0 +1,39 @@
+.{
+    padding: 0;
+    margin: 0;
+}
+footer,header{
+    border: #000 1px solid;
+}
+h3{
+    text-align: right;
+    padding: 1em;
+}
+h1{
+    text-align: center;
+}
+.contenedor{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+}
+
+.paneles{
+    border: #000 1px solid;
+    width: 20em;
+    height: 20em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#vista-previa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    padding: 1em;
+}
+#funciones{
+    padding: 1em;
+}
